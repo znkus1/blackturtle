@@ -1,0 +1,27 @@
+# 프로젝트 루트에서
+nano .gitattributes
+# 또는
+code .gitattributes
+```
+
+**내용:**
+```
+# Auto detect text files and normalize to LF
+* text=auto eol=lf
+
+# Python files
+*.py text eol=lf
+
+# YAML files
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Docker files
+Dockerfile text eol=lf
+docker-compose*.yml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows files
+*.bat text eol=crlf
